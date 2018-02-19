@@ -1,0 +1,17 @@
+{
+  "name": "sass_starter_pack",
+  "version": "1.0.0",
+  "description": "\"Simple app implementing sass\"",
+  "main": "index.js",
+  "scripts": {
+    "start":"gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raudel Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

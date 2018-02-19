@@ -1,0 +1,88 @@
+@import "variables";
+@import "functions";
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background: $body-bg;
+  font-family: $main-font;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: $dark-color;
+}
+
+.container{
+  max-width: $container;
+  margin: auto;
+  padding:0px 20px;
+}
+
+header#header-main{
+  padding: 1em;
+  background: $primay-color;
+  color: setTextColor($primay-color);
+
+  h1{
+    font-size: 40px;
+  }
+}
+
+nav#main-nav{
+  background: $secondary-color;
+  height: 40px;
+  ul{
+    list-style: none;
+    padding-top: 10px;
+  }
+  li{
+    display: inline;
+  }
+  a{
+    color: setTextColor($secondary-color);
+    padding-right: 20px;
+    &:hover{
+      color: #575353;
+    }
+  }
+}
+
+.section{
+  padding: $section-padding;
+  h1{
+    margin-bottom: 30px;
+  }
+}
+
+#section-a{
+  @extend .section;
+  background: $light-color;
+  color: setTextColor($light-color);
+}
+
+#section-b{
+  @extend .section;
+  background: $dark-color;
+  color: setTextColor($dark-color);
+}
+
+.button{
+  padding: 10px 15px;
+}
+
+.button-a{
+  @extend .button;
+  background: darken($primay-color, 10%);
+  color: setTextColor($primay-color);
+}
+
+.button-b{
+  @extend .button;
+  background: lighten($secondary-color, 10%);
+  color: setTextColor($secondary-color);
+}
